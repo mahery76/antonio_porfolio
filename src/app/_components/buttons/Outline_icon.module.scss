@@ -1,0 +1,12 @@
+.Outline_icon{
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    box-shadow: 1px 3px 3px 0px grey;
+    text-align: center;
+    padding: 1em 2em;
+    border-radius: 50px 50px 50px 50px;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+}
+
