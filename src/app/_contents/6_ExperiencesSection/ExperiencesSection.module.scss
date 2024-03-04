@@ -1,7 +1,11 @@
 @import "../../breakpoints.module";
 .experienceEducationSection {
     //   background-color: pink;
-    margin: 3em 2em 3em 2em;
+    margin: 0 2em 0 2em;
+    padding: 3em 0 0 0;
+    @include breakpoint(sm) {
+      padding: 5em 4em 0 4em;
+    }
     .experienceEducationTitle {
       font-size: 2em;
       font-weight: bold;
@@ -16,11 +20,12 @@
       align-items: center;
       @include breakpoint(sm){
           flex-direction: row;
-          justify-content: space-around;
+          justify-content: space-between;
+
       }
         .experienceContent {
           margin-top: 2em;
-          max-width: 25em;
+          max-width: 35em;
       
           .experienceTitle {
             font-size: 1.5em;

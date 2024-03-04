@@ -17,8 +17,16 @@ function IntroSection() {
         Junior frontend developer from Antsirabe Madagascar
       </div>
       <div className={styles.Intro_buttons}>
-          <Fill_icon button_label='View my skills' icon_element={<FaEye />}/>
-          <Outline_icon button_label='View my projects' icon_element={<FaEye />}/>
+          <Fill_icon 
+          button_label='View my skills' 
+          icon_element={<FaEye />}
+          href="#skills"
+          />
+          <Outline_icon 
+          button_label='View my projects' 
+          icon_element={<FaEye />}
+          href="#projects"
+          />
       </div>
     </div>
 

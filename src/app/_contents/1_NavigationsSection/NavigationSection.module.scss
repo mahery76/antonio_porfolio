@@ -2,16 +2,19 @@
 
 .NavigationSection {
   background-color: rgb(255, 255, 255);
-  box-shadow: 3px 2px 6px 5px rgb(221, 221, 221);
+  box-shadow: 1px 1px 6px 0.3px rgb(119, 119, 119);
   min-height: 5.5em;
   display: flex;
   align-items: center;
   width: 100%;
+  top: 0;
+  z-index: 500;
 
   .mahery_logo {
-    margin: 0 0 0 2em;
+    margin: 0.7em 0 0 2em;
     height: 100%;
     align-self: flex-start;
+
     @include breakpoint(md) {
       margin: 0 0 0 4em;
       align-self: center;
@@ -21,12 +24,12 @@
 
   .logoImg {
     border-radius: 1em 1em 1em 1em;
-    margin-top: 1em;
+    // margin-top: 1em;
     width: 6em;
     height: 4em;
-    @include breakpoint(md) {
-      margin-top: 0;
-    }
+    // @include breakpoint(md) {
+    //   margin-top: 0;
+    // }
   }
 
   .navigation_closed {
@@ -39,7 +42,6 @@
 
     .openButton {
       color: rgb(49, 49, 49);
-      padding: 0.5em;
       cursor: pointer;
     }
   }
@@ -52,7 +54,7 @@
     gap: 1em;
     padding: 2em 2em 2em 0;
     font-weight: bold;
-    color: rgb(49, 49, 49);
+    color: var(--third-color);
 
     @include breakpoint(md) {
       flex-direction: row;
@@ -63,19 +65,18 @@
 
     .closeButton {
       color: rgb(49, 49, 49);
-      padding: 0.5em;
       cursor: pointer;
       @include breakpoint(md) {
         display: none;
       }
     }
-    .about_me {
-      box-shadow: 1px 3px 3px 0px grey;
-      text-align: center;
-      padding: 1em 2em;
-      border-radius: 50px 50px 50px 50px;
-      background-color: var(--primary-color);
-      color: white;
+
+    a {
+      color: var(--third-color);
+      text-decoration: none;
+      &:hover {
+        color: var(--primary-color);
+      }
     }
     .navigation_links {
       display: flex;
@@ -86,4 +87,3 @@
     }
   }
 }
-

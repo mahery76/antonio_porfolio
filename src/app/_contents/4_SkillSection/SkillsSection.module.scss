@@ -1,5 +1,10 @@
 @import "../../breakpoints.module";
 .skillsSection {
+  margin: 0 2em 0 2em;
+  padding: 3em 0 0 0;
+  @include breakpoint(sm) {
+    padding: 5em 4em 0 4em;
+  }
   .skillsTitle {
     font-size: 1.5em;
     font-weight: bold;
@@ -11,12 +16,12 @@
     color: var(--secondary-color);
     font-size: 1.2em;
     line-height: 1.4em;
-    margin: 2em 2em 2em 2em;
+    margin: 2em 0 2em 0;
   }
   .toolsAndTech {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: space-around;
+    justify-content: space-between;
     row-gap: 1em;
     // background-color:yellow;
     @include breakpoint(xs) {

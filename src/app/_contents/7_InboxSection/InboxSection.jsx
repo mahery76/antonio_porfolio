@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import styles from "./InboxSection.module.scss";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function InboxSection() {
   return (
-    <div className={styles.inboxSection}>
+    <div className={styles.inboxSection} id="contact_me">
       <div className={styles.inboxTitle}>Get in touch</div>
       <div className={styles.inboxDescription}>
         Please feel welcome to reach out to me at your convenience, whether it's
@@ -43,17 +43,31 @@ function InboxSection() {
       </div>
       <div className={styles.inboxFooter}>
         <div className={styles.logosFooter}>
-          <FaGithub size="1.3em" />
-          <FaLinkedin size="1.3em" />
-          <FaFacebook size="1.3em" />
-          <FaInstagram size="1.3em" />
+          <a href="https://github.com/mahery76" target="_blanc">
+            <FaGithub size="1.3em" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/randrianjafy-mahery-701121210"
+            target="_blanc"
+          >
+            <FaLinkedin size="1.3em" />
+          </a>
+          <a
+            href="https://www.facebook.com/antonio.randrianjafy.10/"
+            target="_blanc"
+          >
+            <FaFacebook size="1.3em" />
+          </a>
+          <a href="https://www.instagram.com/mahery_antonio/" target="_blanc">
+            <FaInstagram size="1.3em" />
+          </a>
         </div>
         <div className={styles.copyright}>
           ©2024 Mahery RANDRIANJAFY. All rights reserved.
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default InboxSection
+export default InboxSection;

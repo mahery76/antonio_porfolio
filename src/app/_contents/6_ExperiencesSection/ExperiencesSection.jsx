@@ -3,8 +3,8 @@ import styles from "./ExperiencesSection.module.scss";
 
 function ExperiencesSection() {
   return (
-    <div className={styles.experienceEducationSection}>
-    <div className={styles.experienceEducationTitle}>
+    <div className={styles.experienceEducationSection} id='experiences'>
+    <div className={styles.experienceEducationTitle} >
       Experiences & Educations
     </div>
     <div className={styles.experienceEducationContent}>

@@ -17,8 +17,8 @@ import { SiPostman } from "react-icons/si";
 import { SiAdobephotoshop } from "react-icons/si";
 function SkillsSection() {
   return (
-    <div className={styles.skillsSection}>
-    <div className={styles.skillsTitle}>
+    <div className={styles.skillsSection} id='skills'>
+    <div className={styles.skillsTitle} >
       Tools & Technologies I use
     </div>
 

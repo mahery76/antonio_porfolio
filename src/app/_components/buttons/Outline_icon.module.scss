@@ -1,12 +1,20 @@
 .Outline_icon{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0.5em;
     box-shadow: 1px 3px 3px 0px grey;
     text-align: center;
     padding: 1em 2em;
     border-radius: 50px 50px 50px 50px;
     background-color: white;
+    color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 

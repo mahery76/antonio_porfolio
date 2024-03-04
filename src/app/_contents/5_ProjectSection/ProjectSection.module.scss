@@ -1,32 +1,36 @@
 @import "../../breakpoints.module";
 .projectSection {
-    //   background-color: rgb(255, 209, 217);
-      margin: 3em 2em 3em 2em;
-    
-      .projectTitle {
-        font-size: 2em;
-        font-weight: bold;
-        color: var(--primary-color);
-        // background-color: violet;
-        text-align: center;
-      }
-      .projectDescription {
-        margin-top: 1em;
-        color: var(--secondary-color);
-        font-size: 1.2em;
-        line-height: 1.4em;
-      }
-     
-      .projectButtons {
-        // background-color: rgb(255, 195, 195);
-        width: 100%;
-        margin-top: 2em;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        @include breakpoint(sm) {
-          flex-direction: row;
-          justify-content: center;
-        }
-      }
+  //   background-color: rgb(255, 209, 217);
+  margin: 0 2em 0 2em;
+  padding: 3em 0 0 0;
+  @include breakpoint(sm) {
+    padding: 5em 4em 0 4em;
+  }
+
+  .projectTitle {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    // background-color: violet;
+    text-align: center;
+  }
+  .projectDescription {
+    margin-top: 1em;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+
+  .projectButtons {
+    // background-color: rgb(255, 195, 195);
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    @include breakpoint(sm) {
+      flex-direction: row;
+      justify-content: center;
     }
+  }
+}

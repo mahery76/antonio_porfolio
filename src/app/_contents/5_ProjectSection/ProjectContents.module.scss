@@ -46,7 +46,7 @@
         font-size: 0.8em;
         line-height: 1.4em;
         @include breakpoint(sm) {
-          height: 15em;
+          height: 20em;
         }
       }
       .itemTools {
@@ -57,7 +57,7 @@
     .itemButtons {
       display: flex;
       justify-content: center;
-      gap: 2em;
+      gap:1em;
       // background-color: pink;
     }
   }
