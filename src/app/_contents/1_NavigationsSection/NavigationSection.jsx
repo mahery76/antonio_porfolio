@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
-import styles from "./Navigation.module.scss";
+import styles from "./NavigationSection.module.scss";
 import useWindowWidth from "../../_hooks/useWindowWidth";
 import Image from "next/image";
 import logo from "../../../../public/images/MALOGO.png";
 
-function Navigation() {
+function NavigationSection() {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
     const width = useWindowWidth();
     const upToMd = width >= 1024;
@@ -70,4 +70,4 @@ function Navigation() {
     );
 }
 
-export default Navigation
+export default NavigationSection

@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './Intro.module.scss'
+import styles from './IntroSection.module.scss'
 import Fill_icon from '@/app/_components/buttons/Fill_icon'
 import Outline_icon from '@/app/_components/buttons/Outline_icon'
 import { FaEye } from 'react-icons/fa'
 
-function Intro() {
+function IntroSection() {
   return (
     <div className={styles.Intro_section}>
     <div className={styles.Intro_content}> 
@@ -28,4 +28,4 @@ function Intro() {
   )
 }
 
-export default Intro
+export default IntroSection
