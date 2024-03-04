@@ -1,53 +1,48 @@
 @import "../../breakpoints.module";
 .skillsSection {
-    .skillsTitle {
-      font-size: 1.5em;
-      font-weight: bold;
-      color: var(--primary-color);
-      text-align: center;
-      // background-color: pink;
+  .skillsTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    // background-color: pink;
+  }
+  .toolsDescription {
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 2em 2em 2em 2em;
+  }
+  .toolsAndTech {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    row-gap: 1em;
+    // background-color:yellow;
+    @include breakpoint(xs) {
+      grid-template-columns: auto auto auto auto;
     }
-    .toolsDescription{
-      color: var(--secondary-color);
-      font-size: 1.2em;
-      line-height: 1.4em;
-      margin: 2em 2em 2em 2em;
+    @include breakpoint(sm) {
+      grid-template-columns: auto auto auto auto auto;
     }
-    .toolsAndTech{
-      display: grid;
-      grid-template-columns: auto auto auto;
+    .toolsItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: space-around;
-      row-gap: 1em;
-      // background-color:yellow;
-      @include breakpoint(xs){
-          grid-template-columns: auto auto auto auto;
+      // background-color: pink;
+      width: 5em;
+      height: 5em;
+      .toolsIcon {
+        font-size: 1.7em;
+        color: var(--primary-color);
       }
-      @include breakpoint(sm){
-          display: flex;
-          gap: 2em;
-          flex-wrap: wrap;
-      }
-      .toolsItem{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          // background-color: pink;
-          width: 5em;
-          height: 5em;
-          .toolsIcon{
-              font-size: 1.7em;
-              color: var(--primary-color);
-          }
-          .toolsName{
-              font-size: 1em;
-              color: var(--primary-color);
-              // background-color: pink;
-              text-align: center;
-              @include breakpoint(md){
-                  display: none;
-              }
-          }
+      .toolsName {
+        font-size: 1em;
+        color: var(--primary-color);
+        // background-color: pink;
+        text-align: center;
       }
     }
   }
+}

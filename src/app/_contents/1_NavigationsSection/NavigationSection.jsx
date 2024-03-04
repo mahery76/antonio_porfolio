@@ -19,8 +19,6 @@ function NavigationSection() {
           <div className={styles.mahery_logo} title="Mahery Antonio">
             <Image
               src={logo}
-              width={60}
-              height={60}
               alt="Mahery Antonio"
               className={styles.logoImg}
             />
@@ -52,8 +50,6 @@ function NavigationSection() {
         <div className={styles.mahery_logo} title="Mahery Antonio">
           <Image
             src={logo}
-            width={60}
-            height={60}
             alt="Mahery Antonio"
             className={styles.logoImg}
           />
