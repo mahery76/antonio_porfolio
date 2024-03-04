@@ -1,0 +1,88 @@
+@import "../../_breakpoints.module";
+
+.NavigationSection {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 2px 6px 5px rgb(221, 221, 221);
+  min-height: 5.5em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .mahery_logo {
+    margin: 0 0 0 2em;
+    height: 100%;
+    align-self: flex-start;
+    @include breakpoint(md) {
+      margin: 0 0 0 4em;
+      align-self: center;
+    }
+    cursor: pointer;
+  }
+
+  .logoImg {
+    border-radius: 1em 1em 1em 1em;
+    margin-top: 1em;
+    @include breakpoint(md) {
+      margin-top: 0;
+      border-radius: 1em 1em 1em 1em;
+    }
+  }
+
+  .navigation_closed {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2em;
+    font-weight: bold;
+
+    .openButton {
+      color: rgb(49, 49, 49);
+      padding: 0.5em;
+      cursor: pointer;
+    }
+  }
+  .navigation_open {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em 2em 2em 0;
+    font-weight: bold;
+    color: rgb(49, 49, 49);
+
+    @include breakpoint(md) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 4em 0 0;
+    }
+
+    .closeButton {
+      color: rgb(49, 49, 49);
+      padding: 0.5em;
+      cursor: pointer;
+      @include breakpoint(md) {
+        display: none;
+      }
+    }
+    .about_me {
+      box-shadow: 1px 3px 3px 0px grey;
+      text-align: center;
+      padding: 1em 2em;
+      border-radius: 50px 50px 50px 50px;
+      background-color: var(--primary-color);
+      color: white;
+    }
+    .navigation_links {
+      display: flex;
+      gap: 1em;
+      @include breakpoint(sm) {
+        margin-left: 1em;
+      }
+    }
+  }
+}
+

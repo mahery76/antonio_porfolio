@@ -1,0 +1,83 @@
+@import "../../breakpoints.module";
+
+.Intro_section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2em 0 2em;
+  @include breakpoint(md) {
+      flex-direction: row;
+      margin: 0 0 0 2em;
+  }
+  .Intro_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    margin: 2em 0 2em 0;
+    @include breakpoint(md) {
+      width: 50%;
+      box-sizing: border-box;
+      height: 42em;
+      justify-content: center;
+      padding-left: 4em;
+      padding-right: 1em;
+      margin: 0;
+    }
+
+    .Big_title {
+      text-align: center;
+      font-weight: bolder;
+      font-size: 2em;
+      color: var(--third-color);
+      @include breakpoint(sm) {
+        font-size: 3.5em;
+        font-weight: 920;
+      };
+      @include breakpoint(md) {
+        font-size: 3em;
+        font-weight: 920;
+      };
+      @include breakpoint(lg) {
+        font-size: 3.5em;
+        font-weight: 920;
+      }
+
+      .Font_vert {
+        color: var(--primary-color);
+      }
+    }
+    .Brief_presentation {
+      text-align: center;
+      color: var(--secondary-color);
+      font-size: 1.2em;
+ 
+    }
+    .Intro_buttons {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1em;
+      @include breakpoint(sm){
+        width: 100%;
+        flex-direction: row;
+      }
+    }
+  }
+
+  .Cover_photo {
+    background-image: url("../../../../public/images/intro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15em; 
+    @include breakpoint(sm) {
+      height: 22em;
+    }
+    @include breakpoint(md) {
+      width: 50%;
+      height: 42em;
+      border-radius: 42em 0 0 42em; 
+    }
+  }
+}
