@@ -1,0 +1,77 @@
+@import "../../breakpoints.module";
+.experienceEducationSection {
+    //   background-color: pink;
+    margin: 3em 2em 3em 2em;
+    .experienceEducationTitle {
+      font-size: 2em;
+      font-weight: bold;
+      color: var(--primary-color);
+      // background-color: violet;
+      text-align: center;
+    }
+    .experienceEducationContent{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include breakpoint(sm){
+          flex-direction: row;
+          justify-content: space-around;
+      }
+        .experienceContent {
+          margin-top: 2em;
+          max-width: 25em;
+      
+          .experienceTitle {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--third-color);
+            // background-color: violet;
+            text-align: center;
+            margin-bottom: 1.5em;
+          }
+          .experienceItem {
+            //   background-color: pink;
+            padding: 0 1.5em 0 1.5em;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7em;
+            border-left: 3px solid var(--primary-color);
+            .itemTitle {
+              font-weight: bold;
+              color: var(--primary-color);
+              &:before {
+                content: "";
+                border-radius: 1em 1em 1em 1em;
+                border: 3px solid var(--primary-color);
+                height: 1em;
+                width: 1em;
+                position: absolute;
+                background: var(--fourth-color);
+                margin: -0.2em 0 0 -2.3em;
+              }
+            }
+            .itemPeriod {
+              font-style: italic;
+              color: var(--secondary-color);
+            }
+            .itemLocation {
+              color: black;
+            }
+            .itemContent {
+              .itemContentIntro{
+                  color: var(--third-color);
+                  font-size: 0.9em;
+              }
+              ul li {
+                  margin: 1em 0;
+                  color: var(--third-color);
+                  font-size: 0.9em;
+                  line-height: 1.5em;
+              }
+            }
+          }
+        }
+    }
+  }
+  
