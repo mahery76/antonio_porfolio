@@ -1,0 +1,18 @@
+$breakpoints: (
+ xs: 576px,
+ sm: 768px,
+ md: 1024px,
+ lg: 1290px,
+ xl: 1440px
+);
+
+// Define a mixin to use breakpoints
+@mixin breakpoint($breakpoint) {
+ @if map-has-key($breakpoints, $breakpoint) {
+    @media only screen and (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+ } @else {
+    @error "No such breakpoint '#{$breakpoint}' found in $breakpoints map.";
+ }
+}
