@@ -1,0 +1,108 @@
+@import "../../breakpoints.module";
+.inboxSection {
+  margin: 0 2em 3em 2em;
+  padding: 3em 0 0 0;
+  @include breakpoint(sm) {
+    padding: 5em 4em 0 4em;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //   background-color: pink;
+
+  .inboxTitle {
+    // background-color: pink;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+  }
+  .inboxDescription {
+    margin-top: 1em;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    line-height: 1.4em;
+    // background-color: violet;
+  }
+  .inboxForm {
+    // background-color: #b3b3ff;
+    margin-top: 2em;
+    width: 100%;
+    @include breakpoint(sm) {
+      width: 80%;
+      max-width: 40em;
+    }
+    form {
+      .formName {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        @include breakpoint(sm) {
+          flex-direction: row;
+          gap: 2em;
+        }
+        .inboxInput {
+          width: 100%;
+          @include breakpoint(sm) {
+            width: 50%;
+          }
+        }
+      }
+      .inboxInput {
+        width: 100%;
+
+        label {
+          color: var(--third-color);
+        }
+        input[type="text"],
+        input[type="mail"],
+        textarea {
+          padding: 1em;
+          margin: 1em 0;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          width: 100% !important;
+        }
+      }
+      .inboxSubmit {
+        input[type="submit"] {
+          background-color: var(--primary-color);
+          width: 100%;
+          height: 3em;
+          margin: 1em 0;
+          border-radius: 3em 3em 3em 3em;
+          color: white;
+          font-size: 1em;
+          border: none;
+        }
+      }
+    }
+  }
+  .inboxFooter {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2em;
+    // background-color: aquamarine;
+    .logosFooter {
+      color: var(--third-color);
+      display: flex;
+      gap: 1em;
+      a {
+        color: var(--third-color);
+        text-decoration: none;
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+    .copyright {
+      color: var(--secondary-color);
+      text-align: center;
+      line-height: 1.5em;
+    }
+  }
+}

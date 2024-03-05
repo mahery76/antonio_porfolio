@@ -1,0 +1,53 @@
+@import "../../breakpoints.module";
+.skillsSection {
+  margin: 0 2em 0 2em;
+  padding: 3em 0 0 0;
+  @include breakpoint(sm) {
+    padding: 5em 4em 0 4em;
+  }
+  .skillsTitle {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    // background-color: pink;
+  }
+  .toolsDescription {
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 2em 0 2em 0;
+  }
+  .toolsAndTech {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    row-gap: 1em;
+    // background-color:yellow;
+    @include breakpoint(xs) {
+      grid-template-columns: auto auto auto auto;
+    }
+    @include breakpoint(sm) {
+      grid-template-columns: auto auto auto auto auto;
+    }
+    .toolsItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      // background-color: pink;
+      width: 5em;
+      height: 5em;
+      .toolsIcon {
+        font-size: 1.7em;
+        color: var(--primary-color);
+      }
+      .toolsName {
+        font-size: 1em;
+        color: var(--primary-color);
+        // background-color: pink;
+        text-align: center;
+      }
+    }
+  }
+}
