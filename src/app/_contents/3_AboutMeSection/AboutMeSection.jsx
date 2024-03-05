@@ -3,6 +3,7 @@ import styles from "./AboutMeSection.module.scss";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
 import { FaEye, FaSkype } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import ProfilePic from "../../../../public/images/mahery.JPG";
 import quote from "../../../../public/images/quotation.png";
@@ -21,16 +22,22 @@ function AboutMeSection() {
             <div className={styles.AboutMeQuote}>
               <Image src={quote} className={styles.quotation} />
             </div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus,
-            sapiente tempore! Ut magni quae nemo. Eum, distinctio laudantium?
-            Assumenda aliquam tenetur sunt aperiam architecto voluptatem nihil,
-            aspernatur, illo dolorum quod esse, quo inventore vero adipisci
-            sequi dolorem error.
+            Hi! I am Antonio, I'm a motivated junior frontend developer who loves learning and
+            building great web experiences. I'm looking for a new position where
+            I can grow my skills and work with talented teammates. I believe
+            teamwork is key to creating amazing websites, and I'm a good person to 
+            collaborate with!
           </div>
           <div className={styles.AboutMeContacts}>
             <div className={styles.contactItem}>
               <BsFillTelephoneFill />
               <div className={styles.contactValues}>034 77 778 26</div>
+            </div>
+            <div className={styles.contactItem}>
+              <IoLogoWhatsapp />
+              <div className={styles.contactValues}>
+              034 77 778 26
+              </div>
             </div>
             <div className={styles.contactItem}>
               <IoIosMail />
@@ -39,20 +46,13 @@ function AboutMeSection() {
               </div>
             </div>
             <div className={styles.contactItem}>
-              <FaSkype />
+              <FaLocationDot />
               <div className={styles.contactValues}>
-                randrianjafymahery@gmail.com
-              </div>
-            </div>
-            <div className={styles.contactItem}>
-              <IoLogoWhatsapp />
-              <div className={styles.contactValues}>
-                randrianjafymahery@gmail.com
+              Antananarivo, Madagascar
               </div>
             </div>
           </div>
         </div>
-
         <div className={styles.AboutMeProfilePhoto}>
           <Image
             src={ProfilePic}
@@ -71,7 +71,7 @@ function AboutMeSection() {
         <Outline_icon
           button_label="Get in touch"
           icon_element={<IoIosMail />}
-          href="#about_me"
+          href="#contact_me"
         />
       </div>
     </div>

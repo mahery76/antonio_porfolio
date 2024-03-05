@@ -3,10 +3,10 @@
 .Intro_section {
   display: flex;
   flex-direction: column;
-  margin: 0 2em 0 2em;
+  margin: 3em 2em 0 2em;
   @include breakpoint(md) {
       flex-direction: row;
-      margin: 0 0 0 2em;
+      margin: 3em 0 0 2em;
   }
   .Intro_content {
     width: 100%;

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaWhatsapp, FaSkype } from "react-icons/fa";
 import styles from "./NavigationSection.module.scss";
 import useWindowWidth from "../../_hooks/useWindowWidth";
 import Image from "next/image";
@@ -64,6 +64,18 @@ function NavigationSection() {
               target="_blanc"
             >
               <FaLinkedin size="1.3em" />
+            </a>
+            <a
+              href="https://call.whatsapp.com/video/pdbIwcFN0fgHmAQ2kYWy6i"
+              target="_blanc"
+            >
+              <FaWhatsapp size="1.3em" />
+            </a>
+            <a
+              href="https://join.skype.com/invite/LA36hyeo5uB7"
+              target="_blanc"
+            >
+              <FaSkype size="1.3em" />
             </a>
             <a
               href="https://www.facebook.com/antonio.randrianjafy.10/"
