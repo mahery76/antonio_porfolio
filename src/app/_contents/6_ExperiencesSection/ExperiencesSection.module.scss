@@ -21,6 +21,7 @@
       @include breakpoint(sm){
           flex-direction: row;
           justify-content: space-between;
+          align-items: start;
 
       }
         .experienceContent {
@@ -37,7 +38,7 @@
           }
           .experienceItem {
             //   background-color: pink;
-            padding: 0 1.5em 0 1.5em;
+            padding: 0 1.5em 1em 1.5em;
             display: flex;
             flex-direction: column;
             gap: 0.7em;
@@ -62,14 +63,16 @@
             }
             .itemLocation {
               color: black;
+              font-weight: bold;
             }
             .itemContent {
               .itemContentIntro{
                   color: var(--third-color);
                   font-size: 0.9em;
+                  line-height: 1.5em;
               }
               ul li {
-                  margin: 1em 0;
+                  margin: 1em 0 0 0;
                   color: var(--third-color);
                   font-size: 0.9em;
                   line-height: 1.5em;

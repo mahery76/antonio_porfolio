@@ -48,7 +48,7 @@ function AboutMeSection() {
             <div className={styles.contactItem}>
               <FaLocationDot />
               <div className={styles.contactValues}>
-              Antananarivo, Madagascar
+              ANTANANARIVO, Madagascar
               </div>
             </div>
           </div>
