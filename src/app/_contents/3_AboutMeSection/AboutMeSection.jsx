@@ -22,7 +22,11 @@ function AboutMeSection() {
             <div className={styles.AboutMeQuote}>
               <Image src={quote} className={styles.quotation} />
             </div>
+<<<<<<< HEAD
             Hi! I am Antonio, I'm a motivated junior frontend developer from Madagascar who loves learning and
+=======
+            Hi! I am Antonio, I'm a motivated junior frontend developer who loves learning and
+>>>>>>> 0db966718cb2cc9e6c587f50533310c8b89dbf24
             building great web experiences. I'm looking for a new position where
             I can grow my skills and work with talented teammates. I believe
             teamwork is key to creating amazing websites, and I'm a good person to 
