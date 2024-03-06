@@ -22,7 +22,7 @@ function ProjectSection() {
         <Outline_icon
           button_label="Get my resume"
           icon_element={<IoIosMail />}
-          href="../../../public/Documents/Resume-Mahery Antonio.pdf"
+          href="../../../../public/Documents/Resume-MaheryAntonio.pdf"
         />
       </div>
     </div>

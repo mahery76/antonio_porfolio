@@ -20,7 +20,7 @@ function AboutMeSection() {
         <div className={styles.AboutMeContent}>
           <div className={styles.AboutMeDescription}>
             <div className={styles.AboutMeQuote}>
-              <Image src={quote} className={styles.quotation} />
+              <Image src={quote} className={styles.quotation} alt="quote"/>
             </div>
             Hi! I am Antonio, I'm a motivated junior frontend developer from Madagascar who loves learning and
             building great web experiences. I'm looking for a new position where
