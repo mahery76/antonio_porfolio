@@ -141,7 +141,7 @@ function ExperiencesSection() {
           </div>
 
           <div className={styles.experienceItem}>
-            <div className={styles.itemTitle}>High scholl degree</div>
+            <div className={styles.itemTitle}>High school degree</div>
             <div className={styles.itemPeriod}>
               2017
             </div>

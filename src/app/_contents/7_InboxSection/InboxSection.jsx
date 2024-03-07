@@ -4,7 +4,7 @@ import styles from "./InboxSection.module.scss";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaSkype, FaWhatsapp } from "react-icons/fa";
 
 function InboxSection() {
-
+  
   const handleSubmit = async (event) => {
     event.preventDefault()
     const formData = new FormData(event.target)
@@ -16,6 +16,8 @@ function InboxSection() {
       });
 
       const responseData = await response.json();
+      // here goes the suspense state
+
       console.log(responseData["message"])
       alert("message successfully sent")
 

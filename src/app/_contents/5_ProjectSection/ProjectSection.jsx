@@ -18,12 +18,15 @@ function ProjectSection() {
       </div>
       <ProjectContents />
       <div className={styles.projectButtons}>
-        <Fill_icon button_label="View more" icon_element={<FaGithub />} href="https://github.com/mahery76"/>
-        <Outline_icon
-          button_label="Get my resume"
-          icon_element={<IoIosMail />}
-          href="../../../../public/Documents/Resume-MaheryAntonio.pdf"
-        />
+        <Fill_icon button_label="View more" icon_element={<FaGithub />} href="https://github.com/mahery76" />
+        <a
+          href="/Documents/Resume.pdf"
+          download="Resume.pdf"
+          className={styles.getResume}
+        >
+          <IoIosMail />
+          Get my resume
+        </a>
       </div>
     </div>
   );

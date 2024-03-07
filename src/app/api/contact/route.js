@@ -22,7 +22,7 @@ export async function POST(request) {
       host: 'smtp.gmail.com',
       secure: true,
       auth: {
-         user: myemail,
+         user: personalEmail,
          pass: password,
       },
    })
@@ -44,11 +44,6 @@ export async function POST(request) {
       console.log(err)
       NextResponse.status(500).json({ message: "COULD NOT SEND MESSAGE" })
    }
-
-
-   return NextResponse.json({
-      "message": "Email sent succesfully"
-   });
 }
 
 
