@@ -4,7 +4,6 @@ import ProjectContents from "./ProjectContents";
 import { FaGithub } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import Fill_icon from "@/app/_components/buttons/Fill_icon";
-import Outline_icon from "@/app/_components/buttons/Outline_icon";
 
 function ProjectSection() {
   return (
@@ -18,11 +17,15 @@ function ProjectSection() {
       </div>
       <ProjectContents />
       <div className={styles.projectButtons}>
-        <Fill_icon button_label="View more" icon_element={<FaGithub />} href="https://github.com/mahery76"/>
-        <Outline_icon
-          button_label="Get my resume"
-          icon_element={<IoIosMail />}
-        />
+        <Fill_icon button_label="View more" icon_element={<FaGithub />} href="https://github.com/mahery76" />
+        <a
+          href="/Documents/Resume.pdf"
+          download="Resume.pdf"
+          className={styles.getResume}
+        >
+          <IoIosMail />
+          Get my resume
+        </a>
       </div>
     </div>
   );

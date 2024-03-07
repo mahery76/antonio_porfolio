@@ -20,9 +20,9 @@ function AboutMeSection() {
         <div className={styles.AboutMeContent}>
           <div className={styles.AboutMeDescription}>
             <div className={styles.AboutMeQuote}>
-              <Image src={quote} className={styles.quotation} />
+              <Image src={quote} className={styles.quotation} alt="quote"/>
             </div>
-            Hi! I am Antonio, I'm a motivated junior frontend developer who loves learning and
+            Hi! I am Antonio, I'm a motivated junior frontend developer from Madagascar who loves learning and
             building great web experiences. I'm looking for a new position where
             I can grow my skills and work with talented teammates. I believe
             teamwork is key to creating amazing websites, and I'm a good person to 
@@ -48,7 +48,7 @@ function AboutMeSection() {
             <div className={styles.contactItem}>
               <FaLocationDot />
               <div className={styles.contactValues}>
-              Antananarivo, Madagascar
+              ANTANANARIVO, Madagascar
               </div>
             </div>
           </div>

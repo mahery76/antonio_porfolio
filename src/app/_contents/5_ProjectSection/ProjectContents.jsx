@@ -9,7 +9,7 @@ function ProjectContents() {
   return (
     <div className={styles.projectContent}>
       <div className={styles.projectItem}>
-        <Image src={ProjectImage} className={styles.projectImage} />
+        <Image src={ProjectImage} className={styles.projectImage} alt="Project Image" />
         <div className={styles.itemInfo}>
           <div className={styles.itemName}>Timetable management</div>
           <div className={styles.itemDescription}>
@@ -32,7 +32,7 @@ function ProjectContents() {
       </div>
 
       <div className={styles.projectItem}>
-        <Image src={ProjectImage} className={styles.projectImage} />
+        <Image src={ProjectImage} className={styles.projectImage} alt="Project Image"/>
         <div className={styles.itemInfo}>
           <div className={styles.itemName}>Timetable management</div>
           <div className={styles.itemDescription}>
@@ -53,7 +53,7 @@ function ProjectContents() {
       </div>
 
       <div className={styles.projectItem}>
-        <Image src={ProjectImage} className={styles.projectImage} />
+        <Image src={ProjectImage} className={styles.projectImage} alt="Project Image" />
         <div className={styles.itemInfo}>
           <div className={styles.itemName}>Timetable management</div>
           <div className={styles.itemDescription}>

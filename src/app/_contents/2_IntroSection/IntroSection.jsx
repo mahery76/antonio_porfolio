@@ -14,7 +14,7 @@ function IntroSection() {
         </span> with speed and creativity
       </div>
       <div className={styles.Brief_presentation}>
-        Junior frontend developer from Antananarivo, Madagascar
+        Junior frontend developer from ANTANANARIVO Madagascar
       </div>
       <div className={styles.Intro_buttons}>
           <Fill_icon 
