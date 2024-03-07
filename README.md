@@ -36,9 +36,3 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
-https://www.patrickobermeier.at/home
-
-https://medium.com/@y.mehnati_49486/how-to-send-an-email-from-your-gmail-account-with-nodemailer-837bf09a7628
-
-app password of google account for portfolio app
-pdyt wnov ocpz gmsp

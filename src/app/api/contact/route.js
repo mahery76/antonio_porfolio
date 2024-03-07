@@ -2,12 +2,13 @@ import { NextResponse, NextRequest } from 'next/server'
 const nodemailer = require('nodemailer');
 
 export async function POST(request) {
-   const username = process.env.NEXT_PUBLIC_EMAIL_USERNAME
+   const publicEmail = process.env.NEXT_PUBLIC_EMAIL_USERNAME
    const password = process.env.NEXT_PUBLIC_EMAIL_PASSWORD
-   const myemail = process.env.NEXT_PUBLIC_PERSONAL_EMAIL
+   const personalEmail = process.env.NEXT_PUBLIC_PERSONAL_EMAIL
 
 
-   // the myemail is sending mail to username
+   // the personalEmail is the configured email with app password  and sending mail to 
+   // the publicEmail
    const formData = await request.formData()
 
    const firstname = formData.get('firstname')
@@ -28,8 +29,8 @@ export async function POST(request) {
 
    try {
       const mail = await transporter.sendMail({
-         from: myemail,
-         to: username,
+         from: personalEmail,
+         to: publicEmail,
          subject: subject,
          html: `<p>You have a new contact form submission</p><br>
       <p><strong>Name:</strong> ${firstname} ${lastname}</p>
@@ -40,7 +41,7 @@ export async function POST(request) {
       return NextResponse.json({ message: "Success: email was sent" })
 
    } catch (err) {
-      console.log(error)
+      console.log(err)
       NextResponse.status(500).json({ message: "COULD NOT SEND MESSAGE" })
    }
 
