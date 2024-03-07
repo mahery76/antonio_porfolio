@@ -4,7 +4,7 @@ import fs from 'fs'
 export async function GET(request) {
     try {
         console.log('hello world')
-        const filePath = "../../../../public/Documents/Resume.pdf"
+        // const filePath = "../../../../public/Documents/Resume.pdf"
         const pdfData = await fs.promises.readFile(filePath)
         
         NextResponse.setHeader('Content-Type', 'application/pdf');

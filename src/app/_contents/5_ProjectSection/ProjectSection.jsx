@@ -4,7 +4,6 @@ import ProjectContents from "./ProjectContents";
 import { FaGithub } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import Fill_icon from "@/app/_components/buttons/Fill_icon";
-import Outline_icon from "@/app/_components/buttons/Outline_icon";
 
 function ProjectSection() {
   return (
