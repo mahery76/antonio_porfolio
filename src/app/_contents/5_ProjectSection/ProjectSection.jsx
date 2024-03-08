@@ -17,7 +17,7 @@ function ProjectSection() {
       </div>
       <ProjectContents />
       <div className={styles.projectButtons}>
-        <Fill_icon button_label="View more" icon_element={<FaGithub />} href="https://github.com/mahery76" />
+        <Fill_icon button_label="More projects" icon_element={<FaGithub />} href="https://github.com/mahery76" />
         <a
           href="/Documents/Resume.pdf"
           download="Resume.pdf"
