@@ -82,7 +82,7 @@
         @include breakpoint(md){
           display: block  ;
           position: absolute;
-          z-index: -1;
+          z-index: 1;
           margin-top: -1.5em;
           margin-left: 4em;
           width: 250px;
@@ -99,6 +99,8 @@
         border-radius: 60em 60em 60em 60em;
         width: 200px;
         height: 200px;
+        z-index: 2;
+
         @include breakpoint(lg) {
           width: 250px;
           height: 250px;

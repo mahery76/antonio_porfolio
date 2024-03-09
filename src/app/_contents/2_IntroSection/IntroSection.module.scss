@@ -27,7 +27,7 @@
       display: none;
       @include breakpoint(md) {
         display: block;
-        z-index: -1;
+        z-index: 1;
         top: 7em;
         left: 1em;
         position: absolute;
@@ -42,6 +42,7 @@
       font-weight: bolder;
       line-height: 1em;
       font-size: 2em;
+      z-index: 2;
       color: var(--third-color);
 
       @include breakpoint(sm) {
