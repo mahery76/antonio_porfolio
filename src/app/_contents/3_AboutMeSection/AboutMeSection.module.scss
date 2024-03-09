@@ -77,6 +77,24 @@
       @include breakpoint(md) {
         margin-top: 0;
       }
+      .AboutMeProfilePhotoDots{
+        display: none;
+        @include breakpoint(md){
+          display: block  ;
+          position: absolute;
+          z-index: -1;
+          margin-top: -1.5em;
+          margin-left: 4em;
+          width: 250px;
+          height: 250px;
+          background: radial-gradient(circle, var(--dot-color) 15%, transparent 20%);
+          background-size: 20px 20px; /* Adjust size of dots */
+        }
+        @include breakpoint(lg) {
+          width: 300px;
+          height: 300px;
+        }
+      }
       .ProfilePic {
         border-radius: 60em 60em 60em 60em;
         width: 200px;

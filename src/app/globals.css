@@ -2,7 +2,8 @@
   --primary-color: #2D5A79;
   --secondary-color: #575757;
   --third-color: #303030;
-  --fourth-color: #f7f7f7;
+  --fourth-color: #f8f8f8;
+  --dot-color: #abc3d6;
 }
 * {
   margin: 0 0;

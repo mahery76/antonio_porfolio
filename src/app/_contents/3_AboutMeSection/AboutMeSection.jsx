@@ -54,6 +54,7 @@ function AboutMeSection() {
           </div>
         </div>
         <div className={styles.AboutMeProfilePhoto}>
+          <div className={styles.AboutMeProfilePhotoDots}></div>
           <Image
             src={ProfilePic}
             alt="Mahery Antonio"

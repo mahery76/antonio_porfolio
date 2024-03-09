@@ -7,32 +7,33 @@ import { FaEye } from 'react-icons/fa'
 function IntroSection() {
   return (
     <div className={styles.Intro_section}>
-    <div className={styles.Intro_content}> 
-      <div className={styles.Big_title}>
-        Crafting <span className={styles.Font_vert}>
-          innovative web applications
-        </span> with speed and creativity
-      </div>
-      <div className={styles.Brief_presentation}>
-        Junior frontend developer from ANTANANARIVO Madagascar
-      </div>
-      <div className={styles.Intro_buttons}>
-          <Fill_icon 
-          button_label='View my skills' 
-          icon_element={<FaEye />}
-          href="#skills"
+      <div className={styles.Intro_content}>
+        <div className={styles.IntroDots}> </div>
+        <div className={styles.Big_title}>
+          Crafting <span className={styles.Font_vert}>
+            innovative web applications
+          </span> with speed and creativity
+        </div>
+        <div className={styles.Brief_presentation}>
+          Junior frontend developer from ANTANANARIVO Madagascar
+        </div>
+        <div className={styles.Intro_buttons}>
+          <Fill_icon
+            button_label='View my skills'
+            icon_element={<FaEye />}
+            href="#skills"
           />
-          <Outline_icon 
-          button_label='View my projects' 
-          icon_element={<FaEye />}
-          href="#projects"
+          <Outline_icon
+            button_label='View my projects'
+            icon_element={<FaEye />}
+            href="#projects"
           />
+        </div>
       </div>
-    </div>
 
-    <div className={styles.Cover_photo}>
+      <div className={styles.Cover_photo}>
+      </div>
     </div>
-  </div>
   )
 }
 
