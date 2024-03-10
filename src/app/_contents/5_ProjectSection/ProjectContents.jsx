@@ -97,9 +97,7 @@ function ProjectContents() {
           <Outline_icon button_label="Live link" icon_element="" />
         </div>
       </div>
-
     </div>
   );
 }
-
 export default ProjectContents;
