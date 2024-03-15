@@ -32,6 +32,33 @@
       width: 80%;
       max-width: 40em;
     }
+    .inboxFormDotsLeft{
+      display: none;
+      @include breakpoint(md){
+        display: block;
+        position: absolute;
+        margin-left: -35em;
+        margin-top: 4em;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, var(--dot-color) 15%, transparent 20%);
+        background-size: 20px 20px; /* Adjust size of dots */
+        transform: rotate(45deg);
+      }
+    }
+    .inboxFormDotsright{
+      display: none;
+      @include breakpoint(md){
+        display: block;
+        position: absolute;
+        margin-left: 50em;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, var(--dot-color) 15%, transparent 20%);
+        background-size: 20px 20px; /* Adjust size of dots */
+        transform: rotate(45deg);
+      }
+    }
     form {
       .formName {
         display: flex;

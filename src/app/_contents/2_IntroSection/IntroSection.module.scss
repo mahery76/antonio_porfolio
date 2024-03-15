@@ -18,20 +18,35 @@
     @include breakpoint(md) { 
       width: 50%;
       box-sizing: border-box;
-      height: 42em;
       justify-content: center;
       padding-left: 4em;
       padding-right: 1em;
       margin: 0;
     }
+    .IntroDots{
+      display: none;
+      @include breakpoint(md) {
+        display: block;
+        z-index: 1;
+        top: 7em;
+        left: 1em;
+        position: absolute;
+        height: 35em;
+        width: 7em;
+        background: radial-gradient(circle, var(--dot-color) 15%, transparent 15%);
+        background-size: 30px 30px; /* Adjust size of dots */
+      };
+    }
 
     .Big_title {
-      text-align: center;
       font-weight: bolder;
+      line-height: 1em;
       font-size: 2em;
+      z-index: 2;
       color: var(--third-color);
+
       @include breakpoint(sm) {
-        font-size: 3.5em;
+        font-size: 2.5em;
         font-weight: 920;
       };
       @include breakpoint(md) {
@@ -76,7 +91,7 @@
     }
     @include breakpoint(md) {
       width: 50%;
-      height: 42em;
+      height: 46em;
       border-radius: 42em 0 0 42em; 
     }
   }

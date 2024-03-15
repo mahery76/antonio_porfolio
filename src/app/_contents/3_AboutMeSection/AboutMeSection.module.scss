@@ -1,10 +1,12 @@
 @import "../../breakpoints.module";
+
 .AboutMeSection {
   margin: 0 2em 0 2em;
   padding: 3em 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include breakpoint(sm) {
     padding: 5em 4em 0 4em;
   }
@@ -14,9 +16,11 @@
     font-weight: bold;
     color: var(--primary-color);
   }
+
   .AboutMe_Content_and_Photo {
     display: flex;
     flex-direction: column;
+
     @include breakpoint(md) {
       flex-direction: row;
       gap: 3em;
@@ -26,9 +30,11 @@
       margin-top: 2em;
       display: flex;
       flex-direction: column;
+
       @include breakpoint(md) {
         width: 70%;
       }
+
       .AboutMeDescription {
         color: var(--secondary-color);
         font-size: 1.2em;
@@ -36,22 +42,26 @@
         // background-color: yellow;
 
         .AboutMeQuote {
-          // background-color: pink;
+          display: none;
           position: absolute;
-          margin: -2.5em 0 0 -1em;
-
+          margin: -2em 0 0 -3em;
+          @include breakpoint(sm) {
+            display: block;
+          }
           .quotation {
-            opacity: 30%;
-            height: 5em;
-            width: 5em;
+            color: var(--primary-color);
+            height: 3em;
+            width: 3em;
           }
         }
       }
+
       .AboutMeContacts {
         // background-color: rgb(216, 152, 152);
         margin-top: 2em;
         display: grid;
         grid-template-columns: auto;
+
         @include breakpoint(sm) {
           grid-template-columns: auto auto;
         }
@@ -70,17 +80,44 @@
         }
       }
     }
+
     .AboutMeProfilePhoto {
       margin-top: 2em;
       display: flex;
       justify-content: center;
+
       @include breakpoint(md) {
         margin-top: 0;
       }
+
+      .AboutMeProfilePhotoDots {
+        display: none;
+
+        @include breakpoint(md) {
+          display: block;
+          position: absolute;
+          z-index: 1;
+          margin-top: -1.5em;
+          margin-left: 4em;
+          width: 250px;
+          height: 250px;
+          background: radial-gradient(circle, var(--dot-color) 15%, transparent 20%);
+          background-size: 20px 20px;
+          /* Adjust size of dots */
+        }
+
+        @include breakpoint(lg) {
+          width: 300px;
+          height: 300px;
+        }
+      }
+
       .ProfilePic {
         border-radius: 60em 60em 60em 60em;
         width: 200px;
         height: 200px;
+        z-index: 2;
+
         @include breakpoint(lg) {
           width: 250px;
           height: 250px;
@@ -88,6 +125,7 @@
       }
     }
   }
+
   .AboutMe_buttons {
     // background-color: rgb(255, 195, 195);
     width: 100%;
@@ -95,6 +133,7 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
+
     @include breakpoint(sm) {
       flex-direction: row;
       justify-content: center;

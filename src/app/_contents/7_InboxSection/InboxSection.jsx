@@ -29,12 +29,16 @@ function InboxSection() {
   return (
     <div className={styles.inboxSection} id="contact_me">
       <div className={styles.inboxTitle}>Get in touch</div>
+
       <div className={styles.inboxDescription}>
         Please feel welcome to reach out to me at your convenience, whether it's
         for potential collaboration, project involvement, or any other inquiry.
         I eagerly await your message!
       </div>
+
       <div className={styles.inboxForm}>
+        <div className={styles.inboxFormDotsLeft}></div>
+        <div className={styles.inboxFormDotsright}></div>
         <form onSubmit={handleSubmit}>
           <div className={styles.formName}>
             <div className={styles.inboxInput}>
