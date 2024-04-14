@@ -13,16 +13,10 @@ function ProjectContents() {
         <div className={styles.itemInfo}>
           <div className={styles.itemName}>Timetable management</div>
           <div className={styles.itemDescription}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            ratione culpa, quod dicta consectetur corporis porro! Esse ea eos
-            neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            ratione culpa, quod dicta consectetur corporis porro! Esse ea eos
-            neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            ratione culpa, quod dicta consectetur corporis porro! Esse ea eos
-            neque.
+          This web application is designed to simplify the process of planning your college timetable. With a focus on providing a better user experience and flexible interface. While still in its prototype phase, your input and contributions are highly valued. You're encouraged to participate in the project's development via the provided GitHub link. 
           </div>
           <div className={styles.itemTools}>
-            React, Express.js, Tailwind CSS, PostgresSql
+           NextJS, ReactJS, Tailwind CSS, IndexedDB.
           </div>
         </div>
         <div className={styles.itemButtons}>
