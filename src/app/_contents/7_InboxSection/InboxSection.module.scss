@@ -1,10 +1,15 @@
 @import "../../breakpoints.module";
 .inboxSection {
+  position: absolute;
   margin: 0 2em 3em 2em;
   padding: 3em 0 0 0;
+  overflow: hidden;
+  
   @include breakpoint(sm) {
     padding: 5em 4em 0 4em;
+    margin: 0 0 3em 0;
   }
+
   display: flex;
   flex-direction: column;
   align-items: center;

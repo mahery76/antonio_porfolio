@@ -43,21 +43,21 @@ function InboxSection() {
           <div className={styles.formName}>
             <div className={styles.inboxInput}>
               <label htmlFor="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" />
+              <input type="text" id="fname" name="firstname"  required />
             </div>
             <div className={styles.inboxInput}>
               <label htmlFor="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" />
+              <input type="text" id="lname" name="lastname"  required/>
             </div>
           </div>
 
           <div className={styles.inboxInput}>
             <label htmlFor="email">Email</label>
-            <input type="mail" id="email" name="email" />
+            <input type="mail" id="email" name="email" required />
           </div>
           <div className={styles.inboxInput}>
             <label htmlFor="subject">Subject</label>
-            <input type="text" id="subject" name="subject" />
+            <input type="text" id="subject" name="subject"  required/>
           </div>
           <div className={styles.inboxInput}>
             <label htmlFor="message">Message</label>

@@ -1,9 +1,8 @@
 import React from 'react'
 import styles from './Fill_icon.module.scss'
-function Fill_icon({button_label, icon_element, href}) {
+function Fill_icon({button_label, href}) {
   return (
-    <a className={styles.Fill_icon} href={href}>
-        {icon_element}
+    <a className={styles.Fill_icon} href={href} target='blank'>
         {button_label}
     </a>
   )

@@ -3,7 +3,7 @@ import styles from "./ProjectSection.module.scss";
 import ProjectContents from "./ProjectContents";
 import { FaGithub } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import Fill_icon from "@/app/_components/buttons/Fill_icon";
+import Fill from "@/app/_components/buttons/Fill";
 
 function ProjectSection() {
   return (
@@ -18,7 +18,7 @@ function ProjectSection() {
       </div> 
       <ProjectContents />
       <div className={styles.projectButtons}>
-        <Fill_icon button_label="More projects" icon_element={<FaGithub />} href="https://github.com/mahery76" />
+        <Fill button_label="More projects on Github" href="https://github.com/mahery76" />
         <a
           href="/Documents/Resume.pdf"
           download="Resume.pdf"
