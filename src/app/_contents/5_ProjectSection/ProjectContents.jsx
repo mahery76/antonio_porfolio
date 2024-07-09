@@ -7,25 +7,27 @@ import ProjectItem from "./ProjectItem";
 function ProjectContents() {
   return (
     <div className={styles.projectContent}>
-
       <ProjectItem
         projectImage={portfolioImage}
         projectName="Portfolio"
-        projectDescription="description of the portfolio"
+        projectDescription="
+        The project is a personal portfolio website that showcases my skills, technologies, programming languages, and personal projects, highlighting my hands-on experience. Designed with responsive web design (RWD) principles, it ensures an optimal viewing experience across all devices, presenting my work in a visually appealing and accessible manner.
+        "
         projectTechnologies="Next.js, React.js, Sass, Nodemailer"
         projectCodeSource="https://github.com/mahery76/antonio_porfolio.git"
         projectLink="https://mahery-antonio.vercel.app/"
       />
-      
+
       <ProjectItem
         projectImage={cybertimerImage}
         projectName="Cybercafe Timer"
-        projectDescription="description of the portfolio"
+        projectDescription="
+         Cybercafe timer is a web application  with an intuitive interface for efficient computer usage management, featuring straightforward controls for easy manipulation by staff and customers. Key functionalities include time tracking, billing management, and user session monitoring, all designed to streamline operations and enhance the user experience.
+        "
         projectTechnologies="Next.js, React.js, Tailwind, Indexed "
         projectCodeSource="https://github.com/mahery76/CybercafeTimer.git"
         projectLink="https://cybercafetimer.vercel.app/"
       />
-
     </div>
   );
 }
