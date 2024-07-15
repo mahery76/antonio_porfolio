@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./ProjectContents.module.scss";
 import portfolioImage from "../../../../public/images/portfolio.png";
 import cybertimerImage from "../../../../public/images/cybertimer.png";
+import ejeryemploiImage from "../../../../public/images/ejeryemploi.png";
 import ProjectItem from "./ProjectItem";
 
 function ProjectContents() {
@@ -17,7 +18,16 @@ function ProjectContents() {
         projectCodeSource="https://github.com/mahery76/antonio_porfolio.git"
         projectLink="https://mahery-antonio.vercel.app/"
       />
-
+      <ProjectItem
+        projectImage={ejeryemploiImage}
+        projectName="Ejeryemploi"
+        projectDescription="
+        Ejeryemploi stands for 'ckeck timetable' in english, and dedicated to university. A comprehensive timetable web app manager that streamlines scheduling and time management for users. Implemented features such as calendar synchronization, real-time updates, and a constraint programming algorithm for generating timetables efficiently..
+        "
+        projectTechnologies="ReactJS, TailwindCSS, ExpressJS, PosgreSQL"
+        projectCodeSource="https://github.com/mahery76/eJeryEmploi.git"
+        // projectLink="https://mahery-antonio.vercel.app/"
+      />
       <ProjectItem
         projectImage={cybertimerImage}
         projectName="Cybercafe Timer"

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ProjectContents.module.scss";
+import styles from "./ProjectItem.module.scss";
 import Fill from "@/app/_components/buttons/Fill";
 import Outline from "@/app/_components/buttons/Outline";
 import Image from "next/image";
