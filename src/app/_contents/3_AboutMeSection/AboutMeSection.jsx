@@ -39,7 +39,7 @@ function AboutMeSection() {
             <div className={styles.contactItem}>
               <IoLogoWhatsapp />
               <div className={styles.contactValues}>
-                034 77 778 26
+                +261 34 30 224 36
               </div>
             </div>
             <div className={styles.contactItem}>
